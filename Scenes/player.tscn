@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dvr7j6yaagw8e"]
+
+[ext_resource type="Script" uid="uid://buyjhycucn3ge" path="res://Scenes/player.gd" id="1_cvnsp"]
+[ext_resource type="Texture2D" uid="uid://2o578x8gaihr" path="res://Assets/character/2 Owlet_Monster/Owlet_Monster.png" id="1_v0iea"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cvnsp"]
+size = Vector2(37, 40)
+
+[node name="Player" type="CharacterBody2D" unique_id=1135112089]
+script = ExtResource("1_cvnsp")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=74175517]
+texture = ExtResource("1_v0iea")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=992217292]
+position = Vector2(-1.5, 2)
+shape = SubResource("RectangleShape2D_cvnsp")
